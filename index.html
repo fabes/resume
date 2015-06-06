@@ -1,0 +1,23 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World! Thank you for viewing my resume! - Fabion O. Stephens</title>
+    <link rel="stylesheet" href="assets/vendors/foundation/css/foundation.min.css" />
+    <script src="assets/vendors/foundation/js/vendor/modernizr.js"></script>
+    <script src="assets/vendors/angularjs/angular.min.js"></script>
+</head>
+<body>
+<div class="m-header">
+    <div class="m-header--image"></div>
+    <div class="m-header--title"></div>
+</div>
+<div>
+    <label>Name:</label>
+    <input type="text" ng-model="yourName" placeholder="Enter a name here">
+    <hr>
+    <h1>Hello {{yourName}}!</h1>
+</div>
+</body>
+</html>
