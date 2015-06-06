@@ -5,7 +5,7 @@
  */
 var resumeApp = angular.module('resumeApp', []);
 
-//Declare a header controller with an array of objects
+//Declare a header controller with JSON objects
 resumeApp.controller('headerCtrl', function($scope) {
     $scope.biocontact =
         {
