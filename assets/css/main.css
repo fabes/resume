@@ -1,0 +1,17 @@
+/* line 1, ../sass/base/_global.sass */
+body {
+  background-color: #262223;
+  margin: 0;
+}
+
+/* line 1, ../sass/modules/_app.sass */
+.m-app--wrapper {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+/* line 1, ../sass/modules/_header.sass */
+.m-header {
+  padding: 1rem;
+}

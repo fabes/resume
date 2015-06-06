@@ -1,23 +1,48 @@
 <!doctype html>
-<html class="no-js" lang="en" ng-app>
+<html class="no-js" lang="en" ng-app="resumeApp">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello World! Thank you for viewing my resume! - Fabion O. Stephens</title>
     <link rel="stylesheet" href="assets/vendors/foundation/css/foundation.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <script src="assets/vendors/foundation/js/vendor/modernizr.js"></script>
     <script src="assets/vendors/angularjs/angular.min.js"></script>
+    <script src="assets/js/resume.js"></script>
 </head>
 <body>
-<div class="m-header">
-    <div class="m-header--image"></div>
-    <div class="m-header--title"></div>
-</div>
-<div>
-    <label>Name:</label>
-    <input type="text" ng-model="yourName" placeholder="Enter a name here">
-    <hr>
-    <h1>Hello {{yourName}}!</h1>
+<div class="row">
+    <div class="small-12 columns">
+        <div class="m-app--wrapper">
+            <div class="m-header" ng-controller="headerCtrl">
+                <div class="row collapse">
+                    <div class="small-12 medium-4 columns">
+                        {{biocontact.address.street}}
+                    </div>
+                    <div class="small-12 medium-4 columns">
+                        {{biocontact.address.city}}
+                    </div>
+                    <div class="small-12 medium-4 columns">
+                        {{biocontact.address.country}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 medium-3 medium-centered columns end">
+                        <div class="m-header--image">
+                            <img src="{{biocontact.img}}" title="{{biocontact.name}}" alt="{{biocontact.name}}">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 medium-6 medium-centered columns end">
+                        <div class="m-header--title text-center">
+                            <h1>{{biocontact.name}}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
