@@ -84,20 +84,20 @@ resumeApp.controller('projlinksCtrl', function($scope) {
             url: 'http://quivio.com/',
             url_text: 'dmafb.me',
             desc: 'Technologies used in this project: Ruby 2 / Rails 4, Postgresql, Devise, Carrierwave, Ominauth, '+
-                  ' OmniContacts, ActiveMerchant, ActiveAdmin, Sunspot Solr, jQuery, Compass SASS, Foundation'
+                  ' OmniContacts, ActiveMerchant, ActiveAdmin, Sunspot Solr, jQuery, Compass SASS, Foundation.'
         },
         {
             name: 'aSuiteStay',
             url: 'http://www.asuitestay.com/',
             url_text: 'aSuiteStay.com',
             desc: 'Jump in to rescue project by doing lots of bug fixes, refactoring, setup AWS S3, customize travel packages '+
-                  ' MVC, HAML (second time working with)'
+                  ' MVC, HAML (second time working with).'
         },
         {
             name: 'The Novak Agency',
             url: 'http://thenovakagency.com/',
             url_text: 'thenovakagency.com',
-            desc: 'Develop custom plugins for the Wordpress platform, tweak and styled theme based on client needs'
+            desc: 'Develop custom plugins for the Wordpress platform, tweak and styled theme based on client needs.'
         },
         {
             name: 'Github',
