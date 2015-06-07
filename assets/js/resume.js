@@ -123,7 +123,7 @@ resumeApp.controller('recreCtrl', function($scope) {
 resumeApp.controller('skillsCtrl', function($scope) {
     $scope.header = 'Skills Set'
     $scope.skillsset = [
-       'OO PHP', 'Ruby', 'Ruby on Rails', 'Postgresql', 'mySQL', 'Javascript', 'jQuery', 'Compass SASS', 'SMACSS', 'HTML/HTML5', 'Wordpress', 'Drupal',
-        'Git', 'Linux', 'AWS'
+       'OO PHP', 'Ruby', 'Ruby on Rails', 'Postgresql', 'mySQL', 'Javascript', 'jQuery', 'Compass SASS', 'CSS', 'SMACSS',
+        'HTML/HTML5', 'Wordpress', 'Drupal', 'Git', 'Linux', 'AWS'
     ];
 });
