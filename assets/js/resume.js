@@ -107,3 +107,10 @@ resumeApp.controller('projlinksCtrl', function($scope) {
     ];
 });
 
+//Declare a recreational controller
+resumeApp.controller('recreCtrl', function($scope) {
+    $scope.header = 'Things I Do for Fun'
+    $scope.info = 'Just go out and explore life outside of the computer :) specifically having occasional drinks ' +
+                  'with friends and family, playing video games, try to dance, meditate and giving back when I can to my community.'
+});
+
