@@ -102,7 +102,9 @@ resumeApp.controller('projlinksCtrl', function($scope) {
         {
             name: 'Github',
             url: 'https://github.com/fabes',
-            url_text: 'https://github.com/fabes'
+            url_text: 'https://github.com/fabes',
+            desc: 'Working to add some public activity for my profile and looking to contribute on some opensource projects.'+
+                  'I do have a lot of contributions on some private repos to share upon request.'
         },
         {
             name: 'Stackoverflow',
@@ -124,6 +126,6 @@ resumeApp.controller('skillsCtrl', function($scope) {
     $scope.header = 'Skills Set'
     $scope.skillsset = [
        'OO PHP', 'Ruby', 'Ruby on Rails', 'Postgresql', 'mySQL', 'Javascript', 'jQuery', 'Compass SASS', 'CSS', 'SMACSS',
-        'HTML/HTML5', 'Wordpress', 'Drupal', 'Git', 'Linux', 'AWS'
+        'HTML/HTML5', 'Wordpress', 'Drupal', 'Git', 'Linux', 'AWS S3'
     ];
 });
