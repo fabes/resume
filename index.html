@@ -67,6 +67,13 @@
             </div>
             <div class="m-app--content-block">
                 <div class="m-experience" ng-controller="expCtrl">
+                    <div class="m-experience--header">
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <h2>{{header}}</h2>
+                            </div>
+                        </div>
+                    </div>
                     <div ng-repeat="exp in experiences">
                         <div ng-include="expTemplate"></div>
                     </div>

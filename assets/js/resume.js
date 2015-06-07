@@ -36,27 +36,25 @@ resumeApp.controller('objectiveCtrl', function($scope) {
 //Declare an experience controller with JSON objects
 resumeApp.controller('expCtrl', function($scope) {
     $scope.expTemplate = 'views/experience.html';
+    $scope.header = 'Experience';
     $scope.experiences = [
         {
             company: 'OpenSesame',
             location: 'Oregon, USA',
             duration: 'Feb 2012 - June 2015',
-            position: 'Software Engineer',
-            brief_desc: ''
+            position: 'Software Engineer'
         },
         {
             company: 'Freelancing',
             location: 'Kingston, Jamaica',
             duration: 'September 2010 - Feb 2012',
-            position: 'Web Design/Development',
-            brief_desc: ''
+            position: 'Web Design/Development'
         },
         {
             company: 'LiveEnrol',
             location: 'Sydney Australia',
             duration: 'January 2009 - August 2010',
-            position: 'Lead Web Developer',
-            brief_desc: ''
+            position: 'Lead Web Developer'
         }
     ];
 

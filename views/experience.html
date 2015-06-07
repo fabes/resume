@@ -2,4 +2,26 @@
     <div class="small-12 medium-3 columns">
         {{exp.company}}
     </div>
+    <div class="small-12 medium-3 columns">
+        {{exp.location}}
+    </div>
+    <div class="small-12 medium-3 columns">
+        {{exp.position}}
+    </div>
+    <div class="small-12 medium-3 columns">
+        {{exp.duration}}
+    </div>
+</div>
+<div class="row">
+    <div class="small-12 columns">
+        <span ng-if="exp.company == 'OpenSesame'">
+            <div ng-include="" src="'views/exp_briefs/opensesame.html'"></div>
+        </span>
+        <span ng-if="exp.company == 'LiveEnrol'">
+            <div ng-include="" src="'views/exp_briefs/live_enrol.html'"></div>
+        </span>
+        <span ng-if="exp.company == 'Freelancing'">
+            <div ng-include="" src="'views/exp_briefs/freelancing.html'"></div>
+        </span>
+    </div>
 </div>
