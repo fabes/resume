@@ -32,6 +32,20 @@
                 </div>
             </div>
             <div class="m-app--content-block">
+                <div class="m-skills-set" ng-controller="skillsCtrl">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <div class="m-app--content-header">
+                                <h2>{{header}}</h2>
+                                <div ng-repeat="skill in skillsset">
+                                    <span class="radius secondary label">{{skill}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-app--content-block">
                 <div class="row">
                     <div class="small-12 columns">
                         <div class="m-objective" ng-controller="objectiveCtrl">

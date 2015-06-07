@@ -59,3 +59,15 @@ body {
 .m-header {
   padding: 1rem;
 }
+
+/* line 2, ../sass/modules/_skills-set.sass */
+.m-skills-set .label {
+  display: inline-block;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+/* line 1, ../sass/modules/_footer.sass */
+.m-footer {
+  padding: 1rem 0;
+}

@@ -119,3 +119,11 @@ resumeApp.controller('recreCtrl', function($scope) {
                   'with friends and family, playing video games, try to dance, meditate and giving back when I can to my community.'
 });
 
+//Declare a skills set controller with JSON objects
+resumeApp.controller('skillsCtrl', function($scope) {
+    $scope.header = 'Skills Set'
+    $scope.skillsset = [
+       'OO PHP', 'Ruby', 'Ruby on Rails', 'Postgresql', 'mySQL', 'Javascript', 'jQuery', 'Compass SASS', 'SMACSS', 'HTML/HTML5', 'Wordpress', 'Drupal',
+        'Git', 'Linux', 'AWS'
+    ];
+});
