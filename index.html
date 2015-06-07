@@ -93,6 +93,20 @@
                     </div>
                 </div>
             </div>
+            <div class="m-app--content-block">
+                <div class="m-edu" ng-controller="projlinksCtrl">
+                    <div class="m-project-links--header">
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <h2>{{header}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-repeat="project_link in project_links">
+                        <div ng-include="projlinkTemplate"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

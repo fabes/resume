@@ -60,16 +60,50 @@ resumeApp.controller('expCtrl', function($scope) {
 
 });
 
-//Declare an objective controller with JSON objects
+//Declare an education controller with JSON objects
 resumeApp.controller('eduCtrl', function($scope) {
     $scope.eduTemplate = 'views/education.html'
     $scope.header = 'Education'
     $scope.edus = [
         {
-            institution: 'Norther Caribbean University',
+            institution: 'Northern Caribbean University',
             location: 'Manchester, Jamaica',
             achievement: 'ASc. Information Science',
             duration: '2002 - 2004'
         }
     ];
 });
+
+//Declare a project/links controller with JSON objects
+resumeApp.controller('projlinksCtrl', function($scope) {
+    $scope.projlinkTemplate = 'views/project_links.html'
+    $scope.header = 'Projects and Links'
+    $scope.project_links = [
+        {
+            name: 'DMAFB (staging)',
+            url: 'https://quivio.com/',
+            desc: 'Technologies used in this project: Ruby 2 / Rails 4, Postgresql, Devise, Carrierwave, Ominauth, '+
+                  ' OmniContacts, ActiveMerchant, ActiveAdmin, Sunspot Solr, jQuery, Compass SASS, Foundation'
+        },
+        {
+            name: 'aSuiteStay',
+            url: 'https://www.asuitestay.com/',
+            desc: 'Jump in to rescue project by doing lots of bug fixes, refactoring, setup AWS S3, customize travel packages '+
+                  ' MVC, HAML (second time working with)'
+        },
+        {
+            name: 'The Novak Agency',
+            url: 'https://thenovakagency.com/',
+            desc: 'Develop custom plugins for the Wordpress platform, tweak and styled theme based on client needs'
+        },
+        {
+            name: 'Github',
+            url: 'https://github.com/fabes'
+        },
+        {
+            name: 'Stackoverflow',
+            url: 'http://stackoverflow.com/users/2782661/fabion-stephens'
+        }
+    ];
+});
+
