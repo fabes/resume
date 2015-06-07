@@ -16,28 +16,16 @@
         <div class="m-app--wrapper">
             <div class="m-app--content-block">
                 <div class="m-header" ng-controller="headerCtrl">
-                    <div class="row collapse">
-                        <div class="small-12 medium-4 columns">
-                            {{biocontact.address.street}}
-                        </div>
-                        <div class="small-12 medium-4 columns">
-                            {{biocontact.address.city}}
-                        </div>
-                        <div class="small-12 medium-4 columns">
-                            {{biocontact.address.country}}
-                        </div>
-                    </div>
                     <div class="row">
-                        <div class="small-12 medium-3 medium-centered columns end">
-                            <div class="m-header--image">
-                                <img ng-src="{{biocontact.img}}" title="{{biocontact.name}}" alt="{{biocontact.name}}">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="small-12 medium-6 medium-centered columns end">
+                        <div class="small-12 medium-7 medium-centered columns end">
                             <div class="m-header--title text-center">
                                 <h1>{{biocontact.name}}</h1>
+                                <div>
+                                    {{biocontact.address.city}}, {{biocontact.address.country}}
+                                </div>
+                                <div>
+                                    {{biocontact.email}} | {{biocontact.telephone}}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -47,7 +35,7 @@
                 <div class="row">
                     <div class="small-12 columns">
                         <div class="m-objective" ng-controller="objectiveCtrl">
-                            <div class="m-objective--header">
+                            <div class="m-app--content-header">
                                 <div class="row">
                                     <div class="small-12 columns">
                                         <h2>{{objective.header}}</h2>
@@ -57,7 +45,7 @@
                             <div class="row">
                                 <div class="small-12 columns">
                                     <div class="m-objective--content">
-                                        <p>{{objective.content}}</p>
+                                        <span>{{objective.content}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +55,7 @@
             </div>
             <div class="m-app--content-block">
                 <div class="m-experience" ng-controller="expCtrl">
-                    <div class="m-experience--header">
+                    <div class="m-app--content-header">
                         <div class="row">
                             <div class="small-12 columns">
                                 <h2>{{header}}</h2>
@@ -81,7 +69,7 @@
             </div>
             <div class="m-app--content-block">
                 <div class="m-edu" ng-controller="eduCtrl">
-                    <div class="m-edu--header">
+                    <div class="m-app--content-header">
                         <div class="row">
                             <div class="small-12 columns">
                                 <h2>{{header}}</h2>
@@ -95,7 +83,7 @@
             </div>
             <div class="m-app--content-block">
                 <div class="m-edu" ng-controller="projlinksCtrl">
-                    <div class="m-project-links--header">
+                    <div class="m-app--content-header">
                         <div class="row">
                             <div class="small-12 columns">
                                 <h2>{{header}}</h2>
@@ -109,7 +97,7 @@
             </div>
             <div class="m-app--content-block">
                 <div class="m-hobbies" ng-controller="recreCtrl">
-                    <div class="m-project-links--header">
+                    <div class="m-app--content-header">
                         <div class="row">
                             <div class="small-12 columns">
                                 <h2>{{header}}</h2>
@@ -126,7 +114,9 @@
             <div class="m-footer">
                 <div class="row">
                     <div class="small-12 text-center columns">
-                        References will be provided upon request
+                        <span class="coltext greytext">
+                           References will be provided upon request.
+                        </span>
                     </div>
                 </div>
             </div>

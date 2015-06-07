@@ -28,7 +28,7 @@ resumeApp.controller('objectiveCtrl', function($scope) {
     {
         header: 'Profile',
         content: '' +
-            'Self taught programmer genuinely seeking to work with best and learn from the best while truly '+
+            'Self taught programmer genuinely seeking to make/invent beautiful apps with a smart, driven and passionate team while truly '+
             ' making an impact through software engineering.'
     };
 });
@@ -41,19 +41,19 @@ resumeApp.controller('expCtrl', function($scope) {
         {
             company: 'OpenSesame',
             location: 'Oregon, USA',
-            duration: 'Feb 2012 - June 2015',
+            duration: 'Feb 2012 - Jun 2015',
             position: 'Software Engineer'
         },
         {
             company: 'Freelancing',
             location: 'Kingston, Jamaica',
-            duration: 'September 2010 - Feb 2012',
-            position: 'Web Design/Development'
+            duration: 'Sep 2010 - Feb 2012',
+            position: 'Web Developer'
         },
         {
             company: 'LiveEnrol',
-            location: 'Sydney Australia',
-            duration: 'January 2009 - August 2010',
+            location: 'Sydney, Australia',
+            duration: 'Jan 2009 - Aug 2010',
             position: 'Lead Web Developer'
         }
     ];
@@ -66,7 +66,7 @@ resumeApp.controller('eduCtrl', function($scope) {
     $scope.header = 'Education'
     $scope.edus = [
         {
-            institution: 'Northern Caribbean University',
+            institution: 'NCU',
             location: 'Manchester, Jamaica',
             achievement: 'ASc. Information Science',
             duration: '2002 - 2004'
@@ -81,28 +81,33 @@ resumeApp.controller('projlinksCtrl', function($scope) {
     $scope.project_links = [
         {
             name: 'DMAFB (staging)',
-            url: 'https://quivio.com/',
+            url: 'http://quivio.com/',
+            url_text: 'dmafb.me',
             desc: 'Technologies used in this project: Ruby 2 / Rails 4, Postgresql, Devise, Carrierwave, Ominauth, '+
                   ' OmniContacts, ActiveMerchant, ActiveAdmin, Sunspot Solr, jQuery, Compass SASS, Foundation'
         },
         {
             name: 'aSuiteStay',
-            url: 'https://www.asuitestay.com/',
+            url: 'http://www.asuitestay.com/',
+            url_text: 'aSuiteStay.com',
             desc: 'Jump in to rescue project by doing lots of bug fixes, refactoring, setup AWS S3, customize travel packages '+
                   ' MVC, HAML (second time working with)'
         },
         {
             name: 'The Novak Agency',
-            url: 'https://thenovakagency.com/',
+            url: 'http://thenovakagency.com/',
+            url_text: 'thenovakagency.com',
             desc: 'Develop custom plugins for the Wordpress platform, tweak and styled theme based on client needs'
         },
         {
             name: 'Github',
-            url: 'https://github.com/fabes'
+            url: 'https://github.com/fabes',
+            url_text: 'https://github.com/fabes'
         },
         {
             name: 'Stackoverflow',
-            url: 'http://stackoverflow.com/users/2782661/fabion-stephens'
+            url: 'https://stackoverflow.com/users/2782661/fabion-stephens',
+            url_text: 'https://stackoverflow.com/users/2782661/fabion-stephens'
         }
     ];
 });
