@@ -21,3 +21,43 @@ resumeApp.controller('headerCtrl', function($scope) {
             email: 'fabion@thestephenshq.com'
         };
 });
+
+//Declare an objective controller with JSON objects
+resumeApp.controller('objectiveCtrl', function($scope) {
+    $scope.objective =
+    {
+        header: 'Profile',
+        content: '' +
+            'Self taught programmer genuinely seeking to work with best and learn from the best while truly '+
+            ' making an impact through software engineering.'
+    };
+});
+
+//Declare an experience controller with JSON objects
+resumeApp.controller('expCtrl', function($scope) {
+    $scope.expTemplate = 'views/experience.html';
+    $scope.experiences = [
+        {
+            company: 'OpenSesame',
+            location: 'Oregon, USA',
+            duration: 'Feb 2012 - June 2015',
+            position: 'Software Engineer',
+            brief_desc: ''
+        },
+        {
+            company: 'Freelancing',
+            location: 'Kingston, Jamaica',
+            duration: 'September 2010 - Feb 2012',
+            position: 'Web Design/Development',
+            brief_desc: ''
+        },
+        {
+            company: 'LiveEnrol',
+            location: 'Sydney Australia',
+            duration: 'January 2009 - August 2010',
+            position: 'Lead Web Developer',
+            brief_desc: ''
+        }
+    ];
+
+});

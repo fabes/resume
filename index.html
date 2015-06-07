@@ -14,30 +14,61 @@
 <div class="row">
     <div class="small-12 columns">
         <div class="m-app--wrapper">
-            <div class="m-header" ng-controller="headerCtrl">
-                <div class="row collapse">
-                    <div class="small-12 medium-4 columns">
-                        {{biocontact.address.street}}
+            <div class="m-app--content-block">
+                <div class="m-header" ng-controller="headerCtrl">
+                    <div class="row collapse">
+                        <div class="small-12 medium-4 columns">
+                            {{biocontact.address.street}}
+                        </div>
+                        <div class="small-12 medium-4 columns">
+                            {{biocontact.address.city}}
+                        </div>
+                        <div class="small-12 medium-4 columns">
+                            {{biocontact.address.country}}
+                        </div>
                     </div>
-                    <div class="small-12 medium-4 columns">
-                        {{biocontact.address.city}}
+                    <div class="row">
+                        <div class="small-12 medium-3 medium-centered columns end">
+                            <div class="m-header--image">
+                                <img src="{{biocontact.img}}" title="{{biocontact.name}}" alt="{{biocontact.name}}">
+                            </div>
+                        </div>
                     </div>
-                    <div class="small-12 medium-4 columns">
-                        {{biocontact.address.country}}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-12 medium-3 medium-centered columns end">
-                        <div class="m-header--image">
-                            <img src="{{biocontact.img}}" title="{{biocontact.name}}" alt="{{biocontact.name}}">
+                    <div class="row">
+                        <div class="small-12 medium-6 medium-centered columns end">
+                            <div class="m-header--title text-center">
+                                <h1>{{biocontact.name}}</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="m-app--content-block">
                 <div class="row">
-                    <div class="small-12 medium-6 medium-centered columns end">
-                        <div class="m-header--title text-center">
-                            <h1>{{biocontact.name}}</h1>
+                    <div class="small-12 columns">
+                        <div class="m-objective" ng-controller="objectiveCtrl">
+                            <div class="m-objective--header">
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <h2>{{objective.header}}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <div class="m-objective--content">
+                                        <p>{{objective.content}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-app--content-block">
+                <div class="m-experience" ng-controller="expCtrl">
+                    <div ng-repeat="exp in experiences">
+                        <div ng-include="expTemplate"></div>
                     </div>
                 </div>
             </div>
