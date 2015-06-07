@@ -79,6 +79,20 @@
                     </div>
                 </div>
             </div>
+            <div class="m-app--content-block">
+                <div class="m-edu" ng-controller="eduCtrl">
+                    <div class="m-edu--header">
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <h2>{{header}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-repeat="edu in edus">
+                        <div ng-include="eduTemplate"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

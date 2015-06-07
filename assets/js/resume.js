@@ -59,3 +59,17 @@ resumeApp.controller('expCtrl', function($scope) {
     ];
 
 });
+
+//Declare an objective controller with JSON objects
+resumeApp.controller('eduCtrl', function($scope) {
+    $scope.eduTemplate = 'views/education.html'
+    $scope.header = 'Education'
+    $scope.edus = [
+        {
+            institution: 'Norther Caribbean University',
+            location: 'Manchester, Jamaica',
+            achievement: 'ASc. Information Science',
+            duration: '2002 - 2004'
+        }
+    ];
+});
