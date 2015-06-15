@@ -98,18 +98,6 @@ resumeApp.controller('projlinksCtrl', function($scope) {
             url: 'http://thenovakagency.com/',
             url_text: 'thenovakagency.com',
             desc: 'Develop custom plugins for the Wordpress platform, tweak and styled theme based on client needs.'
-        },
-        {
-            name: 'Github',
-            url: 'https://github.com/fabes',
-            url_text: 'https://github.com/fabes',
-            desc: 'Working to add some public activity for my profile and looking to contribute on some opensource projects.'+
-                  'I do have a lot of contributions on some private repos to share upon request.'
-        },
-        {
-            name: 'Stackoverflow',
-            url: 'https://stackoverflow.com/users/2782661/fabion-stephens',
-            url_text: 'https://stackoverflow.com/users/2782661/fabion-stephens'
         }
     ];
 });
